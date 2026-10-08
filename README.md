@@ -414,3 +414,7 @@ LangAlpha is software, not a financial adviser. Nothing it produces is investmen
 ## License
 
 [Apache 2.0](LICENSE)
+
+### Compatible search endpoints
+
+Support any Serper.dev-compatible endpoint (like litescrape.com, serpbase.dev, serpensapi.org, and others). Set `SERPER_BASE_URL` to the provider base URL without `/search` and use its API key. The existing Serper endpoint remains the default.

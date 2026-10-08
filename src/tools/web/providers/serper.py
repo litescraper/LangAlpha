@@ -39,7 +39,7 @@ class SerperAPI:
         if not self.api_key:
             raise ValueError("SERPER_API_KEY not found in environment variables")
 
-        self.base_url = "https://google.serper.dev"
+        self.base_url = (os.getenv("SERPER_BASE_URL") or "https://google.serper.dev").rstrip("/")
 
     async def _make_request(
         self,
